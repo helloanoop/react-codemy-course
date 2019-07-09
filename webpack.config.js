@@ -1,7 +1,5 @@
 const path = require('path');
 
-console.log(path.resolve(__dirname, 'vendor/flat-ui'));
-
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'app/index.js'),
@@ -39,7 +37,8 @@ module.exports = {
             '@babel/plugin-transform-runtime',
             '@babel/plugin-proposal-export-namespace-from',
             '@babel/plugin-proposal-export-default-from',
-            '@babel/plugin-proposal-class-properties'
+            ["@babel/plugin-proposal-decorators", { "legacy": true }],
+            ["@babel/plugin-proposal-class-properties", { "loose": true }]
           ]
         }
       }

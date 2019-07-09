@@ -1,4 +1,4 @@
-import Contacts from './Contacts';
+import contacts from './Contacts';
 
 const stores = {
   contacts
