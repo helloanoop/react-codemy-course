@@ -5,8 +5,13 @@ This is the project that I built along as I followed through the tutorials at Re
 yarn install
 
 ## Build
-node_modules/.bin/webpack
+```bash
+npm run build
+```
 
 ## Run
-node_modules/.bin/webpack-dev-server --colors --progress --watch
+```bash
+npm run start
+```
+
 
